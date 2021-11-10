@@ -1,16 +1,18 @@
 div {
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 15%;
+  left: 10%;
   border-radius: 50%;
   background-color: violet;
 
-  animation-name: color-shift, move-sideways, move-updown, scale;
-  animation-duration: 2s, 2.5s, 3.5s, 4.5s;
+  /* animation-name: color-shift, move-sideways, move-updown, scale; */
+  /* animation-duration: 2s, 2.5s, 3.5s, 4.5s; */
+  animation-name: move-around;
+  animation-duration: 5s;  
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -124,5 +126,25 @@ div:nth-child(1) {
   100% {
     width: 200px;
     height: 200px;
+  }
+}
+@keyframes move-around {
+  0% {
+    left: 10%;
+  }
+  25% {
+    left: 90%;
+    top: 15%;
+  }
+  50% {
+    left: 90%;
+    top: 80%;
+  }
+  75% {
+    left: 10%;
+    top: 80%;
+  }
+  100% {
+    top: 15%;
   }
 }
