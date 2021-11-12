@@ -1,0 +1,32 @@
+body, html {
+  margin: 0;
+}
+div {
+  background-color: rgb(142, 168, 226);
+  width: 100px;
+  height: 100px;
+
+  transform: translate(0);
+
+  animation-name: move;
+  animation-duration: 2s;
+  /* animation-direction: reverse; */
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(50vw) translateX(-100px);
+  }
+  50% {
+    transform: translateX(50vw) translateX(-100px) translateY(100vh) translateY(-100px);
+  }
+  75% {
+    transform: translateX(0) translateY(100vh) translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
