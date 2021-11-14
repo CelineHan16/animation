@@ -9,7 +9,8 @@ div {
   transform: translate(0);
 
   animation-name: move;
-  animation-duration: 2s;
+  animation-duration: 3s;
+  /* animation-timing-function: linear; */
   /* animation-direction: reverse; */
   animation-iteration-count: infinite;
 }
@@ -17,13 +18,25 @@ div {
   0% {
     transform: translateX(0);
   }
-  25% {
+  10% {
     transform: translateX(50vw) translateX(-100px);
   }
-  50% {
+  20% {
     transform: translateX(50vw) translateX(-100px) translateY(100vh) translateY(-100px);
   }
-  75% {
+  30% {
+    transform: translateX(100vw) translateX(-100px) translateY(100vh) translateY(-100px);
+  }
+  40% {
+    transform: translateX(100vw) translateX(-100px) translateY(0);
+  }
+  50% {
+    transform: translateX(50vw) translateX(-100px);
+  }
+  70% {
+    transform: translateX(50vw) translateX(-100px) translateY(100vh) translateY(-100px);
+  }
+  90% {
     transform: translateX(0) translateY(100vh) translateY(-100px);
   }
   100% {
