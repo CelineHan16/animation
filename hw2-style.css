@@ -1,0 +1,50 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  background: -webkit-linear-gradient(
+    315deg,
+    rgb(109, 218, 229),
+    rgb(224, 101, 210) 78%
+  );
+  background: -moz-linear-gradient(
+    315deg,
+    rgb(109, 218, 229),
+    rgb(224, 101, 210) 78%
+  );
+  background: linear-gradient(
+    315deg,
+    rgb(109, 218, 229),
+    rgb(224, 101, 210) 78%
+  );
+
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  filter: blur(1px);
+  opacity: 0.5;
+  transition: .5s ease all;
+}
+div:hover {
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1);
+  background: -webkit-linear-gradient(
+    315deg,
+    rgb(11, 78, 167),
+    rgb(244, 4, 152) 100%
+  );
+  background: -moz-linear-gradient(
+    315deg,
+    rgb(11, 78, 167),
+    rgb(244, 4, 152) 100%
+  );
+  background: linear-gradient(315deg, rgb(11, 78, 167), rgb(244, 4, 152) 100%);
+  filter: blur(0);
+  opacity: 1;
+}
